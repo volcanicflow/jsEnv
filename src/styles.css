@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'AnonymousPro';
+  src: url('./AnonymousPro.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.styled {
+  color: red;
+  font-family: 'AnonymousPro'
+  /*background: url('./hedgehoginsocks.jpg')*/
+}
