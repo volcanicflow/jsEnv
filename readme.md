@@ -1,6 +1,6 @@
 Anonymous Pro is a free, open source font available at: https://www.marksimonson.com/fonts/view/anonymous-pro
 
-There are a number of different loaders available through webpack; listed here with a brief description
+There are a number of different loaders/plugins available through webpack; listed here with a brief description
 
 - json
   included by default
@@ -27,5 +27,8 @@ There are a number of different loaders available through webpack; listed here w
 - source mapping, development mode: numerous options available; non-prod: https://webpack.js.org/configuration/devtool/
   inline-source-map
 - webpack has a built in "watch" mode to watch file contents and refresh on saved change; see watch script in package.json
-- options for continual reloading: https://webpack.js.org/configuration/dev-server/#devserver-publicpath-
+- options for continual reloading (HMR built in): https://webpack.js.org/configuration/dev-server/#devserver-publicpath-
   webpack-dev-server
+- conversely, if you want to run hot module replacement with middleware, then you'll need:
+  webpack-dev-middleware
+  webpack-hot-middleware
