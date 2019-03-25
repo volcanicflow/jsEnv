@@ -6,21 +6,24 @@ module.exports = {
   entry: {
     app: "./src/index.js"
   },
-  devtool: "inline-source-map",
+  devtool: "eval-source-map",
   devServer: {
     //serves dist directory to localhost:8080 by default
     contentBase: "./dist",
     //compress: true,
     //port: 9000,
-    hot: false
+    hot: true
   },
   plugins: [
-    //cleaning old files out of dist
+    //CleanWebpack: cleans old files out of dist;
+    //used with HtmlWebpackPlugin to update
+    new webpack.HotModuleReplacementPlugin()
   ],
   output: {
-    //[name] is used by HtmlWebpackPlugin
+    //[name] is used by HtmlWebpackPlugin, more
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/"
   },
   module: {
     rules: [
