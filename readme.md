@@ -1,3 +1,7 @@
+Development Environment skeleton.
+
+To-do: testing. data serving.
+
 Anonymous Pro is a free, open source font available at: https://www.marksimonson.com/fonts/view/anonymous-pro
 
 There are a number of different loaders/plugins available through webpack; listed here with a brief description
