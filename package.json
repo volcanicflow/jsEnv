@@ -21,8 +21,13 @@
   ],
   "author": "michaeld",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/polyfill": "^7.4.3"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
     "style-loader": "^0.23.1",
