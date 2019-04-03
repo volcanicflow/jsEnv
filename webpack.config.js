@@ -33,10 +33,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"],
-            babelrc: {
-              plugins: ["@babel/plugin-proposal-object-rest-spread"]
-            }
+            presets: ["@babel/preset-env"]
           }
         }
       },
